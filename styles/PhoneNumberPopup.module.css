@@ -1,0 +1,171 @@
+.mainAddButton {
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--first-color);
+    width: 150px;
+    border-radius: 10px;
+    color: var(--second-color);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+  }
+  .h1 {
+    font-size: 14px;
+  }
+  .reca{margin:0;}
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(245, 240, 240, 0.52);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .close {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: var(--second-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    left:-10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .input {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    max-width: 90%;
+  }
+  
+  .priceContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .inputSm {
+    width: 25%;
+  }
+  
+  .extra {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .extraItems {
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .extraItem {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid tomato;
+    background-color: var(--second-color);
+    color: tomato;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .addButton {
+    background-color: transparent;
+    border: 1px solid grey;
+    width: fit-content;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 6px 24px;
+    margin-left: 30px;
+  }
+  .addButton:hover{
+    border: 1px solid white;
+  }
+  .submitBtn {
+    background-color: transparent;
+    border: 1px solid grey;
+    width: fit-content;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 6px 24px;
+    margin-left: 45px;
+  }
+  .submitBtn:hover{
+    border: 1px solid white;
+  }
+  .icon{
+    text-justify: center;
+    text-align: center;
+    width: 90%;
+  }
+  .submitBtn3 {
+    background-color: transparent;
+    border: 1px solid grey;
+    width: fit-content;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 6px 10px;
+  }
+  .btnWrapper{
+    margin-top: 20px;
+    display: flex;
+    gap:25px;
+  }
+  .submitBtn3:hover{
+    border: 1px solid white;
+  }
+
+  @media screen and (max-width: 600px){
+      .wrapper{
+        scale:0.6;
+      }
+      
+  }

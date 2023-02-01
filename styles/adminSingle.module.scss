@@ -1,0 +1,139 @@
+.single {
+  display: flex;
+  width: 100%;
+  
+  @media only screen  
+  and (max-width: 497px){
+    overflow-x: scroll;
+  }
+  .singleContainer {
+    width: 100%;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+      .top {
+        align-self: center;
+        width: 90%;
+        display: grid;
+        row-gap:20px;
+        padding: 30px;
+        margin: 30px;
+        height:fit-content;
+        place-items: center;
+        gap:30px;
+        @media only screen  
+        and (max-width: 497px){
+          scale:0.7;
+          margin:0px;
+          padding: 0px;
+        }
+              .widgets{
+                display: flex;
+                flex-direction: row;
+                flex: 3;
+                gap:30px;
+                height: 100%;
+              }
+              .userinfo {
+
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                flex-direction: column;
+                position: relative;
+                padding: 20px;
+                display: flex;
+                flex:1;
+                flex-direction: column;
+
+                        .editButton {
+                          position: absolute;
+                          top: 0;
+                          right: 0;
+                          padding: 5px;
+                          font-size: 12px;
+                          color: rgb(116, 103, 254);
+                          background-color: #7551f818;
+                          cursor: pointer;
+                          border-radius: 0px 0px 0px 5px;
+                        }
+
+                        .item {
+                          display: flex;
+                          gap: 20px;
+
+                          .itemImg {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                          }
+
+                          .details {
+                            .itemTitle {
+                              margin-bottom: 10px;
+                              color: #555;
+                            }
+
+                            .detailItem {
+                              margin-bottom: 10px;
+                              font-size: 14px;
+
+                              .itemKey {
+                                font-weight: bold;
+                                color: gray;
+                                margin-right: 5px;
+                              }
+
+                              .itemValue {
+                                font-weight: 300;
+                              }
+                    }
+                }
+               
+          
+        }
+        
+      }
+
+      
+    }
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      min-width: 500px;
+      // overflow-x: scroll;
+      scale: 1;
+      height: 520px;
+      position: relative;
+
+        .title {
+          font-size: 16px;
+          position: absolute;
+          left: 20px;
+          top:-80px;
+          scale: 1.5;
+          color: lightgray;
+          margin-top: 30px;
+        }
+        .table{
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          position: absolute;
+          height: 680px;
+          top:-80px;
+          right: 0;
+          left: 0;
+          scale: 0.7;
+          // max-height: fit-content;
+          // max-height: 300px;
+        }
+  }
+
+    .title {
+      font-size: 16px;
+      color: lightgray;
+      margin-bottom: 20px;
+    }
+    
+  }
+}

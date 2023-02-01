@@ -1,0 +1,47 @@
+
+/*                FORM                 */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.close{
+    cursor: pointer;
+    position: relative;
+}
+.close:hover{
+    opacity: 0.8;
+}
+.closeicon{
+    right:0;
+    position: absolute;
+}
+.image{
+    border-radius: 50%;
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.input ,.textarea {
+    width: 100%;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    background: transparent;
+    border: 2px solid white;
+    resize: none;
+    color: white;
+}
+.button{
+    background-color: grey;
+    border-color: grey;
+}
+.button:hover{
+    background-color: grey;
+    border-color: grey;
+    opacity: 0.9;
+}
+
+/*  MEDIA QUERIES( medium DEVICES )    */
+@media screen and ( max-width:1080px ) {
+
+}

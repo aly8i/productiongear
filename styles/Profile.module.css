@@ -1,0 +1,71 @@
+.container{
+    width:400px;
+    height: 200px;
+    position: relative;
+}
+.wrapper{
+    position: absolute;
+    right: -40px;
+    z-index: 4;
+}
+.icon{
+    transform:  rotate(180deg) scale(1.2, 0.7);
+    font-size: 300px;
+    position: absolute;
+    right: 0;
+    color: rgba(44, 44, 44, 0.9);
+    left: 0;
+}
+.info{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 120%; right: 58%;
+    transform: translate(42%,-120%);
+    align-items: flex-start;
+    z-index: 5;
+}
+.profileImg {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 2px solid var(--theme-color);
+}
+.name{
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    transition: cubic-bezier(.34,-0.02,.43,.97) 0.3s;
+    
+}
+
+.name:hover{
+    opacity: 0.7;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sectionsub{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.button{
+    cursor: pointer;
+    transition: cubic-bezier(.34,-0.02,.43,.97) 0.3s;
+    opacity: 0.7;
+    margin: 12px;
+    color: white;
+    font-size: 30px;
+}
+.button:hover{
+    opacity: 1;
+}
